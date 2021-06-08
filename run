@@ -1,0 +1,9 @@
+#!/bin/bash
+# -*- mode:shell-script -*-
+
+echo "Running gemm-1-20480-RM-RM-UM"
+bin/gemm-1-20480-RM-RM-UM
+
+echo "Running gemm-4-20480-RM-RM-UM"
+bin/gemm-4-20480-RM-RM-UM
+
