@@ -3,21 +3,24 @@
 This demonstrates how to transform a GPU kernel into multi-GPU kernel
 with unified memory.
 
-The ​=gemm=​ source comes from PolyBench/GPU 1.0 test suite.
+The ​~gemm~ source comes from PolyBench/GPU 1.0 test suite.
 
 * files
-- ​=gemm.cu=​ : original PolyBench gemm program.
-- ​=gemm_multi_gpu.cu=​ : multi-GPU gemm program.
-- ​=compile.sh=​ : script used for compiling
-- ​=util.hpp=​ : a C++ library, simplifies the transformation
+- ~gemm.cu~​ : original PolyBench gemm program.
+- ​~gemm_multi_gpu.cu~ : multi-GPU gemm program.
+- ~compile.sh~ : script used for compiling
+- ​~util.hpp~ : a C++ library, simplifies the transformation
 
-* usage
+* usage of the library
+see the comments in ~util.hpp~
+
+* run the example
 1. compile
   #+begin_src shell
     ./compile.sh
   #+end_src
   
-  which generate binaries in ​=./bin/=​
+  which generate binaries in ​~./bin/~
 2. run
    #+begin_src shell
      # run the gemm for 4-GPUs, policy (RM, RM, UM)
@@ -25,4 +28,4 @@ The ​=gemm=​ source comes from PolyBench/GPU 1.0 test suite.
    #+end_src
 
   
-  
+
